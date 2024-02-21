@@ -175,7 +175,6 @@ export default {
       this.data.iconImage = `${this.data.iconImage}`;
       const res = await this.callApi("post", "app/create_category", this.data);
       if (res.status === 201) {
-        console.log(res.data);
         this.categoryLists.unshift(res.data);
         this.s("Category has been added successfully!");
         this.addModal = false;
@@ -228,7 +227,6 @@ export default {
       // 	id : tag.id,
       // 	tagName : tag.tagName
       // }
-      console.log(category);
       this.editData = category;
       this.editModal = true;
       this.index = index;
@@ -251,10 +249,8 @@ export default {
     handleSuccess(res, file) {
       res = `/uploads/${res}`;
       if (this.isEditingItem) {
-        console.log("inside");
         return (this.editData.iconImage = res);
       }
-      console.log(res);
       this.data.iconImage = res;
     },
     handleError(res, file) {

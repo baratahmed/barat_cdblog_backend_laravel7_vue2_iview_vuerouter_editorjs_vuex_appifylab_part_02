@@ -70,7 +70,6 @@ export default {
 
 	methods : {
         showDeletingModal(blog, i){
-            console.log('the index is ',i)
             this.deletingIndex = i
 			const deleteModalObj  =  {
 				showDeleteModal: true,
@@ -82,7 +81,6 @@ export default {
                 successMsg: 'Blog has been deleted successfully!'
 			}
 			this.$store.commit('setDeletingModalObj', deleteModalObj)
-			console.log('delete method called')
 			// this.deleteItem = tag
 			// this.deletingIndex = i
 			// this.showDeleteModal = true

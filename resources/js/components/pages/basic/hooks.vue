@@ -9,16 +9,16 @@
 export default {
     data(){
         return {
-            name: 'sadek'
+            name: 'Barat'
         }
     }, 
 
     beforeCreate(){
-        console.log(this.name)
+
     },
     created(){
         // call mostly initial data from it... 
-        console.log('data and other function is avilable but not html', this.name)
+        //data and other function is avilable but not html
     },
     mounted(){
         console.log(this.$refs.myref)

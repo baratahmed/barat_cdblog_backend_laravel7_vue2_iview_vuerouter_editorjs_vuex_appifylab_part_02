@@ -243,7 +243,6 @@ export default {
 				isDeleted : false,
 			}
 			this.$store.commit('setDeletingModalObj', deleteModalObj)
-			console.log('delete method called')
 			// this.deleteItem = tag
 			// this.deletingIndex = i
 			// this.showDeleteModal = true

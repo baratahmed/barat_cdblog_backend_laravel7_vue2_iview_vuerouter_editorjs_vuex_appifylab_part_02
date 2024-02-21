@@ -176,7 +176,6 @@ export default {
 	},
 	async created(){
         const id = parseInt(this.$route.params.id)
-        console.log(id)
         if(!id){
             return this.$router.push('/notfound')
 
@@ -189,8 +188,6 @@ export default {
 		if(blog.status==200){
             if(!blog.data) return this.$router.push('/notfound')
 
-
-            console.log(JSON.parse(blog.data.jsonData))
             this.initData = JSON.parse(blog.data.jsonData)
 			this.category = cat.data
             this.tag = tag.data

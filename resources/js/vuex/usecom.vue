@@ -50,7 +50,7 @@ export default {
             //this.$store.commit('changeTheCounter', 1)
         }, 
         runSomethingWhenCounterChange(){
-            console.log('i am running based on each changes happening')
+            //I am running based on each changes happening
         }
     },
     created(){
